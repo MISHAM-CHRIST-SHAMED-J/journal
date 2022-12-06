@@ -246,7 +246,7 @@ const navigation = [
                       {item.name}
                     </a>
                   ))} */}
-                   <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                   <a  className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
                 HOME
                <div class="dropdown-content">
                  <a href="#">ABOUT US</a>
@@ -254,7 +254,7 @@ const navigation = [
                  
                </div>
              </a><br></br>
-             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+             <a  className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
                 EDITORIAL BOARD
                <div class="dropdown-content">
                  <a href="#">EDITOR</a>
@@ -264,7 +264,7 @@ const navigation = [
 
                </div>
              </a><br></br>
-             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+             <a  className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
                 AUTHOR GUIDLINER
                <div class="dropdown-content">
                  <a href="#">SUBMISSION DETAILS</a>
@@ -276,7 +276,7 @@ const navigation = [
 
                </div>
              </a><br></br>
-             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+             <a  className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
                 ISSUE
                <div class="dropdown-content">
                  <a href="#">CURRENT</a>
