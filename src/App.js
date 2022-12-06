@@ -143,7 +143,6 @@ const navigation = [
                <div class="dropdown-content">
                  <a href="#">ABOUT US</a>
                   <a href="#">ABOUT THE JOURNAL</a>
-                 
                </div>
              </a>
              <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
@@ -238,7 +237,7 @@ const navigation = [
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
+                  {/* {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
@@ -246,16 +245,57 @@ const navigation = [
                     >
                       {item.name}
                     </a>
-                  ))}
-                </div>
-                
-                <div className="py-6">
-                <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
-                  >
-                    Log in
-                  </a>
+                  ))} */}
+                   <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                HOME
+               <div class="dropdown-content">
+                 <a href="#">ABOUT US</a>
+                  <a href="#">ABOUT THE JOURNAL</a>
+                 
+               </div>
+             </a><br></br>
+             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                EDITORIAL BOARD
+               <div class="dropdown-content">
+                 <a href="#">EDITOR</a>
+                  <a href="#">PUBLISHER</a>
+                 <a href="#">ADVISOR</a>
+                 <a href="#">EDITORS</a>
+
+               </div>
+             </a><br></br>
+             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                AUTHOR GUIDLINER
+               <div class="dropdown-content">
+                 <a href="#">SUBMISSION DETAILS</a>
+                  <a href="#">ETHICAL POLICY</a>
+                 <a href="#">PLAGE</a>
+                 <a href="#">PUBLICATION POLICY</a>
+                 <a href="#">COPYRIGHT NOTICE</a>
+                 <a href="#">PROCESSING DETAILS</a>
+
+               </div>
+             </a><br></br>
+             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                ISSUE
+               <div class="dropdown-content">
+                 <a href="#">CURRENT</a>
+                  <a href="#">PREVIOUS</a>
+                 <a href="#">SPECIAL</a>
+               </div>
+             </a><br></br>
+             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                CONTACT
+               
+             </a><br></br>
+             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                SUBMISSION
+              
+             </a><br></br>
+             <a href='' className="font-semibold dropdown pb-2 text-gray-900 hover:text-gray-900">
+                NOTICE
+              
+             </a>
                 </div>
               </div>
             </div>
