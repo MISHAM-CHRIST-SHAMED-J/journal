@@ -4,6 +4,9 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { BoltIcon, DevicePhoneMobileIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 import { MegaphoneIcon } from '@heroicons/react/24/outline'
+
+
+
 const features = [
   {
     name: 'Competitive exchange rates',
@@ -31,7 +34,12 @@ const features = [
   },
 ]
 
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
 function App() {
+  
   
   let remove=()=>{
     setbBlock("none")
@@ -40,15 +48,18 @@ function App() {
  
 const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 const navigation = [
-  { name: 'Journey', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'HOME', href: '#' },
+  { name: 'EDITOR BOARD', href: '#' },
+  { name: 'AUTHOR GUIDLINER', href: '#' },
+  { name: 'ISSUE', href: '#' },
+  { name: 'CONTACT', href: '#' },
+  { name: 'SUBMISSION', href: '#' },
+  { name: 'NOTICE', href: '#' },
 ]
   return (
     <div className="isolate bg-light">
-       <div className="bg-indigo-600" style={{display:block}}>
-      <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
+       <div className="bg-indigo-600 " style={{display:"none"}}>
+      <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8 ">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex w-0 flex-1 items-center">
             <span className="flex rounded-lg bg-indigo-800 p-2">
@@ -108,11 +119,11 @@ const navigation = [
     </div>
     <div className="px-6 pt-6 lg:px-8">
       <div>
-        <nav className="flex h-9 items-center justify-between" aria-label="Global">
+        <nav className="flex h-9  items-center justify-between" aria-label="Global">
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Misham</span>
-              <img className="h-8" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" />
+              <img className="h-12" src="https://logos-download.com/wp-content/uploads/2016/12/Caribbean_Journal_logo.png" alt="" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -126,20 +137,78 @@ const navigation = [
             </button>
           </div>
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="font-semibold text-gray-900 hover:text-gray-900">
-                {item.name}
-              </a>
-            ))}
+            {/* {navigation.map((item) => ( */}
+             <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
+                HOME
+               <div class="dropdown-content">
+                 <a href="#">ABOUT US</a>
+                  <a href="#">ABOUT THE JOURNAL</a>
+                 
+               </div>
+             </a>
+             <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
+                EDITORIAL BOARD
+               <div class="dropdown-content">
+                 <a href="#">EDITOR</a>
+                  <a href="#">PUBLISHER</a>
+                 <a href="#">ADVISOR</a>
+                 <a href="#">EDITORS</a>
+
+               </div>
+             </a>
+             <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
+                AUTHOR GUIDLINER
+               <div class="dropdown-content">
+                 <a href="#">SUBMISSION DETAILS</a>
+                  <a href="#">ETHICAL POLICY</a>
+                 <a href="#">PLAGE</a>
+                 <a href="#">PUBLICATION POLICY</a>
+                 <a href="#">COPYRIGHT NOTICE</a>
+                 <a href="#">PROCESSING DETAILS</a>
+
+               </div>
+             </a>
+             <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
+                ISSUE
+               <div class="dropdown-content">
+                 <a href="#">CURRENT</a>
+                  <a href="#">PREVIOUS</a>
+                 <a href="#">SPECIAL</a>
+               </div>
+             </a>
+             <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
+                CONTACT
+               
+             </a>
+             <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
+                SUBMISSION
+              
+             </a>
+             <a href='' className="font-semibold dropdown text-gray-900 hover:text-gray-900">
+                NOTICE
+              
+             </a>
+              
+            {/* ))}  */}
+ 
           </div>
           
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+              className=" md:hidden inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
             >
+              
               Log in
-            </a>&nbsp;
+            </a>
+          </div>
+        </nav>
+        <nav className="d-flex h-9 items-center justify-between" aria-label="Global">
+          <div className="flex float-right lg:min-w-0 lg:flex-1" aria-label="Global">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Misham</span>
+              <img className="h-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/ISBN_with_EAN13.svg/500px-ISBN_with_EAN13.svg.png" alt="" />
+            </a>
           </div>
         </nav>
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -196,10 +265,10 @@ const navigation = [
     </div>
     <main>
       <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-40 sm:pb-40">
+        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-35 sm:pb-40">
           <div>
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              {/* <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                  <span className="text-gray-600">
                   Announcing our next round of funding.{' '}
                   <a href="#" className="font-semibold text-indigo-600">
@@ -207,11 +276,11 @@ const navigation = [
                     Read more <span aria-hidden="true">&rarr;</span> 
                   </a>
                   </span>
-              </div>
+              </div> */}
             </div>
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-              Page of document that gives information
+              <span className='text-indigo-600'>ANANIAS</span> International Journal Of Research
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
